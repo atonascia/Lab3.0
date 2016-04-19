@@ -24,11 +24,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int num1 = Integer.parseInt(editText1.getText().toString());
                 int num2 = Integer.parseInt(editText2.getText().toString());
-                int sum = num1 + num2;
+                int sum = sum(num1, num2);
                 textView.setText(""+sum);
                 editText1.setText("");
                 editText2.setText("");
             }
         });
+    }
+
+    public int sum(int one, int two){
+        return one + two;
     }
 }

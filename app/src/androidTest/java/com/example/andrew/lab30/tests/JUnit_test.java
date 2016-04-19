@@ -21,7 +21,8 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity>{
         mainActivity = getActivity();
         TextView textView = (TextView)mainActivity.findViewById(R.id.tv1);
         String tester = textView.getText().toString();
-        assertEquals("Hello World!", tester);
+        int sum = mainActivity.sum(5, 7);
+        assertEquals(12, sum);
     }
 
 }
