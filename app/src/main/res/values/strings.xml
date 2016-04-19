@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab 3.0</string>
+    <string name="push">ADD</string>
 </resources>
